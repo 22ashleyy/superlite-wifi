@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Superlite index</title>
+    <link rel="stylesheet" href="{%static 'style/style.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Freckle+Face&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Freckle+Face&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Header-->
+<div class="navbar-container">
+    <div class="navbar">
+        <div>
+            <a href="" class="logo">Superlite</a>
+        </div>
+        <div>
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Packages & Pricing</a>
+            <a href="">Testimonials</a>
+            <a href="">Services</a>
+        </div>
+        <div>
+            <a href="">Support</a>
+            <a href=""Contact Us></a>
+            <a href="">Login / Register</a>
+        </div>
+    </div>
+</div>
+{% block content %}
+{% endblock %}
+
+<footer class="footer">
+    <div class="footer-leftitems">
+        <div class="logo">Superlite Wifi</div>
+        <div class="line"></div>
+        <div>
+            <a href="">Home</a>
+            <a href="">Packages & Pricing</a>
+            <a href="">Coverage Areas</a>
+            <a href="">Contact Us</a>
+            <p>Reliable and affordable internet for homes & businesses</p>
+        </div>
+    </div>
+    <div>
+        <i class="ri-instagram-line"></i>
+        <i class="ri-twitter-x-line"></i>
+        <i class="ri-facebook-fill"></i>
+        <i class="ri-linkedin-fill"></i>
+        <p>Support: superlitesupport@gmail.com</p>
+    </div>
+</footer>
+</body>
+</html>
