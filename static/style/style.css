@@ -1,0 +1,217 @@
+body{
+    background-color: #0b2347;
+    font-weight: 500;
+    font-family: "Dosis", sans-serif;
+    margin: 0;
+    color: white;
+    height: 100vh;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+}
+
+
+.navbar-container{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Centers the navbar horizontally */
+    padding: 10px 0;
+    background-color: #0b2347;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+}
+.navbar a{
+    margin-right: 20px;
+}
+.navbar a:hover{
+    color: #cc5500;
+    text-decoration: SelectedItemText;
+}
+.logo{
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 24px;
+    color: #b7410e;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    padding: 10px 50px;
+    background: linear-gradient(to top, #b7410e, #0b2347);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+footer a{
+    margin-right: 15px;
+    color: white;
+}
+footer a:hover{
+    color: black;
+}
+.footer-leftitems{
+    display: flex;
+    align-items: center;
+}
+.footer-leftitems .logo{
+}
+.footer-leftitems .line {
+    border-left: 1px solid white; /* Vertical line */
+    height: 70px; /* Adjust height as needed */
+    margin: 0 20px; /* Space on either side of the line */
+}
+.footer-rightitems{
+    margin: 0 90px 0 0;
+}
+
+.index{
+    margin-top: 50px;
+    flex: 1;
+}
+.introduction{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 100px;
+}
+.left-items button{
+    background-color: #b7410e;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 9px 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition:
+        background-color 0.5s ease-in-out,
+        border 0.3s ease-in-out,
+        color 0.3s ease-in-out;
+}
+.left-items button:hover {
+    background-color: #cc5500;
+    border: 2px solid white;
+    box-shadow: 0px 4px 15px rgba(255, 102, 0, 0.5)
+}
+.pricing{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+.pricing-packaging h2{
+    display: block;
+    margin-bottom: 100px;
+    font-size: 50px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+.package{
+    color: black;
+    background-color: white;
+    padding: 50px 20px 20px 20px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    position: relative;
+    transition: scale ease-in-out 0.3s;
+}
+.fly-item{
+    background-color: #b7410e;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease;
+}
+.fly-item p{
+    margin: 0;
+    line-height: 1;
+}
+.fly-item-price{
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+}
+.package:hover{
+    transform: scale(1.1);
+}
+.package-name{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    border-bottom: solid 2px;
+    text-align: center;
+}
+.package-speed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.package-details{
+    width: 100%;
+}
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    padding: 0 100px;
+    margin: 100px 0 200px 0;
+}
+.services-rightitems {
+    position: relative;
+    text-align: left;
+    margin-right: 50px;
+}
+
+.service-img-1 {
+    width:500px;
+    position: relative;
+    z-index: 1; /* Keeps this image at the back */
+}
+
+.service-img-2 {
+    width: 500px;
+    position: absolute;
+    top: 400px;
+    right: -100px;
+    /*transform: rotate(-10deg); !* Rotates the top image *!*/
+    z-index: 2; /* Ensures it appears in front */
+}
+.services-provided{
+    margin-bottom: 30px;
+}

@@ -1,10 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Interface</title>
+    {% load static %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('static/images/background.png');
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            width: 900px;
+        }
+        .welcome-message, .sign-up-form {
+            flex: 1;
+            padding: 20px;
+        }
+        .welcome-message {
+            border-right: 1px solid white;
+            text-align: center;
+        }
+        .welcome-message img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .learn-more-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .sign-up-form {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .sign-up-form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid white;
+            color: white;
+        }
+        .submit-button {
+            background: linear-gradient(90deg, orange, pink);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .sign-up-options {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .sign-up-options a {
+            color: lightblue;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <div class="container">
+        <div class="welcome-message">
+            <img src="logo.png" alt="Logo">
+            <h1>Join Us!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="learn-more-button">Learn More</button>
+        </div>
+        <div class="sign-up-form">
+            <h2>Sign up</h2>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="User Name">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+            <button class="submit-button">Register</button>
+            <div class="sign-up-options">
+                <a href="#">Already have an account? Sign in</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

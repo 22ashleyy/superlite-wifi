@@ -1,10 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{%block content%}
+<div class="index">
+    <div class="introduction">
+        <div class="left-items">
+            <p>SuperLite WiFi delivers fast, reliable, and affordable internet for homes and businesses. Whether you're streaming, gaming, or working, our seamless connection ensures you stay online without interruptions. Join thousands of satisfied users and experience internet that keeps up with your needs. Get connected today and enjoy hassle-free browsing!</p>
+            <button>Get Connected Today</button>
+        </div>
+        <div>
+            <img src="{% static 'images/hero.png'%}" alt="">
+        </div>
+    </div>
+    <div class="pricing-packaging">
+        <h2>Pricing & Packaging</h2>
+        <div class="pricing">
+            <div class="package">
+                <div class="package-name">Basic Plan</div>
+                <div class="package-speed">
+                    <div style="
+                    font-size: 70px;
+                    font-weight: bold;">5</div>
+                    <div class="speed-info" style="margin-left: 20px">
+                        <div style="font-size: 24px; font-weight: bold">Mbps</div>
+                        <div>Unlimited</div>
+                    </div>
+                </div>
+                <div class="package-details">
+                    <div>Basic browsing & social media ✅ Unlimited</div>
+                    <div>Streaming & remote work ✅ 24/7 Support</div>
+                    <div>HD Streaming & Gaming ✅ Fast Uploads</div>
+                </div>
+                <div class="fly-item">
+                    <p class="fly-item-price">1200</p>
+                    <p>/month</p>
+                </div>
+            </div>
+
+            <div class="package">
+                <div class="package-name">Basic Plan</div>
+                <div class="package-speed">
+                    <div style="
+                    font-size: 70px;
+                    font-weight: bold;">5</div>
+                    <div class="speed-info" style="margin-left: 20px">
+                        <div style="font-size: 24px; font-weight: bold">Mbps</div>
+                        <div>Unlimited</div>
+                    </div>
+                </div>
+                <div class="package-details">
+                    <div>Basic browsing & social media ✅ Unlimited</div>
+                    <div>Streaming & remote work ✅ 24/7 Support</div>
+                    <div>HD Streaming & Gaming ✅ Fast Uploads</div>
+                </div>
+                <div class="fly-item">
+                    <p class="fly-item-price">1200</p>
+                    <p>/month</p>
+                </div>
+            </div>
+
+            <div class="package">
+                <div class="package-name">Basic Plan</div>
+                <div class="package-speed">
+                    <div style="
+                    font-size: 70px;
+                    font-weight: bold;">5</div>
+                    <div class="speed-info" style="margin-left: 20px">
+                        <div style="font-size: 24px; font-weight: bold">Mbps</div>
+                        <div>Unlimited</div>
+                    </div>
+                </div>
+                <div class="package-details">
+                    <div>Basic browsing & social media ✅ Unlimited</div>
+                    <div>Streaming & remote work ✅ 24/7 Support</div>
+                    <div>HD Streaming & Gaming ✅ Fast Uploads</div>
+                </div>
+                <div class="fly-item">
+                    <p class="fly-item-price">1200</p>
+                    <p>/month</p>
+                </div>
+            </div>
+
+            <div class="package">
+                <div class="package-name">Basic Plan</div>
+                <div class="package-speed">
+                    <div style="
+                    font-size: 70px;
+                    font-weight: bold;">5</div>
+                    <div class="speed-info" style="margin-left: 20px">
+                        <div style="font-size: 24px; font-weight: bold">Mbps</div>
+                        <div>Unlimited</div>
+                    </div>
+                </div>
+                <div class="package-details">
+                    <div>Basic browsing & social media ✅ Unlimited</div>
+                    <div>Streaming & remote work ✅ 24/7 Support</div>
+                    <div>HD Streaming & Gaming ✅ Fast Uploads</div>
+                </div>
+                <div class="fly-item">
+                    <p class="fly-item-price">1200</p>
+                    <p>/month</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="services-leftitems">
+            <div class="services-provided">
+                <div><img src="{% static 'images/perfomance.png'%}" alt="" width="80px"></div>
+                <div style="font-weight: bold; font-size: 40px">Perfomance</div>
+                <div>SuperLite WiFi delivers blazing-fast internet speeds to ensure smooth browsing, gaming, and streaming. Whether you're working from home, attending online classes, or watching your favorite movies, our high-performance network guarantees a seamless experience.</div>
+            </div>
+
+            <div class="services-provided">
+                <div><img src="{% static 'images/simplicity.png'%}" alt="" width="80px"></div>
+                <div style="font-weight: bold; font-size: 40px">Simplicity</div>
+                <div>We maintain transparent pricing with no hidden charges, so you always know what you're paying for. Our plug-and-play setup means that you don't have to worry about complex configurations—our technicians handle everything for you. Whether you're a home user or a business, we make it easy to enjoy high-speed internet without any hassle</div>
+            </div>
+
+            <div class="services-provided">
+                <div><img src="{% static 'images/perfomance.png'%}" alt="" width="80px"></div>
+                <div style="font-weight: bold; font-size: 40px">Affordability</div>
+                <div>We offer flexible plans that suit different needs, whether you need basic browsing, smooth video streaming, or heavy data usage for business operations. Our transparent pricing ensures there are no hidden costs or surprise fees—what you see is what you pay.</div>
+            </div>
+        </div>
+        <div class="services-rightitems">
+            <img class="service-img-1" src="{% static 'images/wifimen.png'%}" alt="">
+            <div><img class="service-img-2" src="{% static 'images/laptopspeed.png'%}"  alt=""></div>
+        </div>
+    </div>
+</div>
+{%endblock%}

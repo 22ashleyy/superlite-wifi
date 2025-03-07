@@ -1,10 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            width: 900px;
+        }
+        .welcome-message, .sign-in-form {
+            flex: 1;
+            padding: 20px;
+        }
+        .welcome-message {
+            border-right: 1px solid white;
+            text-align: center;
+        }
+        .welcome-message img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .learn-more-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .sign-in-form {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .sign-in-form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid white;
+            color: white;
+        }
+        .submit-button {
+            background: linear-gradient(90deg, orange, pink);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .sign-in-options {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .sign-in-options a {
+            color: lightblue;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .social-media-icons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .social-media-icons img {
+            width: 30px;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <div class="container">
+        <div class="welcome-message">
+            <img src="logo.png" alt="Logo">
+            <h1>Welcome!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="learn-more-button">Learn More</button>
+        </div>
+        <div class="sign-in-form">
+            <h2>Sign in</h2>
+            <input type="text" placeholder="User Name" value="TechTree">
+            <input type="password" placeholder="Password">
+            <button class="submit-button">Submit</button>
+            <div class="sign-in-options">
+                <a href="#">Forgot password?</a> | <a href="#">Don't have an account?</a>
+            </div>
+            <div class="social-media-icons">
+                <img src="facebook-icon.png" alt="Facebook">
+                <img src="instagram-icon.png" alt="Instagram">
+                <img src="pinterest-icon.png" alt="Pinterest">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
